@@ -1,4 +1,4 @@
-docker-openwrt-ftp
+docker-arm-debian-vsftpd
 ===================
 
 An image based on OpenWrt x86_64 which runs a ftp server.
@@ -10,7 +10,7 @@ The simplest case is to specify user name and password when starting
 the container:
 
 ```
-docker run -p 11021:21 -it --rm -e FTP_USER=scott -e FTP_PASS=tiger -e HOST=localhost mcreations/openwrt-ftp
+docker run -p 11021:21 -it --rm -e FTP_USER=scott -e FTP_PASS=tiger -e HOST=localhost pavelvasev/docker-arm-debian-vsftpd
 ```
 
 Note that ```HOST``` signifies the name or IP with which the docker
@@ -23,7 +23,7 @@ Now, you can ftp to this docker instance with
 ftp localhost 11021
 ```
 
-Github Repo
+Github Repo (original)
 -----------
 
 https://github.com/m-creations/docker-openwrt-ftp
