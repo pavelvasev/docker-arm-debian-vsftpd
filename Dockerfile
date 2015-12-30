@@ -14,9 +14,9 @@ ENV HOST localhost
 
 ADD image/root/ /
 
-RUN opkg update &&\
-    opkg install --force-checksum vsftpd shadow-useradd shadow-groupadd shadow-usermod openssl-util &&\
-    rm /tmp/opkg-lists/*
+RUN apt-get update &&\
+    apt-get install -y vsftpd &&\
+    rm -rf /var/lib/apt/lists/*
 
 EXPOSE 21
 EXPOSE 65000-65100
