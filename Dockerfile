@@ -1,6 +1,6 @@
 ## -*- docker-image-name: "mcreations/openwrt-ftp" -*-
 
-FROM mcreations/openwrt-x64
+FROM armbuild/debian:jessie
 MAINTAINER Kambiz Darabi <darabi@m-creations.net>
 
 ENV FTP_USER ftp
